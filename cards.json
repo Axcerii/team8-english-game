@@ -1,0 +1,9 @@
+{
+    "id": 101,
+    "type": "Prospects",
+    "description": "Une publicité double l’intérêt pour vos produits.",
+    "effects": {
+      "budget": { "value": -1000, "operation": "add" },
+      "prospects": { "value": 2, "operation": "multiply" }
+    }
+  }
