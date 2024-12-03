@@ -1,4 +1,4 @@
-{
+[{
     "id": 101,
     "type": "Prospects",
     "description": "Une publicité double l’intérêt pour vos produits.",
@@ -6,4 +6,33 @@
       "budget": { "value": -1000, "operation": "add" },
       "prospects": { "value": 2, "operation": "multiply" }
     }
+},
+{
+  "id": 102,
+  "type": "Clients",
+  "description": "Gain de Client",
+  "effects": {
+    "revenue": { "value": 10000, "operation": "add" },
+    "budget": { "value": 5000, "operation": "subtract" }
   }
+},
+{
+  "id": 103,
+  "type": "Prospects",
+  "description": "Gain de prospects",
+  "effects": {
+    "prospects": { "value": 10000, "operation": "add" },
+    "budget": { "value": 5000, "operation": "subtract" }
+  }
+},
+{
+  "id": 100,
+  "type": "",
+  "description": "",
+  "effects": {
+    "revenue": { "value": 0, "operation": "add" },
+    "prospects": { "value": 0, "operation": "add" },
+    "budget": { "value": 0, "operation": "add" }
+  }
+}
+]
