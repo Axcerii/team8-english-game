@@ -17,10 +17,10 @@ class Player {
       this.prospects = 0;
       this.turn = 1;
 
-      this.budgetDisplayer = document.getElementById("budget");
-      this.revenueDisplayer = document.getElementById("revenue");
-      this.prospectsDisplayer = document.getElementById("prospects");
-      this.turnDisplayer = document.getElementById("turn");
+      this.budgetDisplayer = document.getElementById(`budget-${this.name}`);
+      this.revenueDisplayer = document.getElementById(`revenue-${this.name}`);
+      this.prospectsDisplayer = document.getElementById(`prospects-${this.name}`);
+      this.turnDisplayer = document.getElementById(`turn-${this.name}`);
     }
   
     useCard(card) {
@@ -72,14 +72,20 @@ class Player {
     }
   } /* End of Player's Class */
 
-const Player1 = new Player("Player 1");
+const Player1 = new Player("1");
+const Player2 = new Player("2");
+const Player3 = new Player("3");
+const Player4 = new Player("4");
 
 Player1.printInfosPlayer();
+Player2.printInfosPlayer();
+Player3.printInfosPlayer();
+Player4.printInfosPlayer();
 
 
 /* Functions */
 
-function globalUseCard() {
+function globalUseCard(Player) {
 
   const cardId = parseInt(document.getElementById("cardId").value, 10);
 
@@ -90,6 +96,13 @@ function globalUseCard() {
     return;
   }
 
-  Player1.useCard(myCard);
-  Player1.printInfosPlayer();
+  Player.useCard(myCard);
+  Player.printInfosPlayer();
+}
+
+function changeTurn(){
+  Player1.nextTurn();
+  Player2.nextTurn();
+  Player3.nextTurn();
+  Player4.nextTurn();
 }
