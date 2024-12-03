@@ -5,26 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <title>Brand and Butter</title>
 </head>
 <body>
-    <section class='beta'>
+<!--     <section class='beta'>
         <?php
-            for($i = 1; $i <= 4; $i++){
+/*             for($i = 1; $i <= 4; $i++){
                 printPlayer($i);
-            }
+            } */
         ?>
-    </section>
-    <section class='bar'>
-        
-    </section>
-    <section class='play-card'>
+    </section> -->
 
+    <section class='container'>
+        <div class='players'>
+            <input type='text' class='playerName' value = 'Player 1'>
+            <div style='width: 100%; height: 100%; display: flex;'>
+                <div class='stats'>
+                    <div class='group-stats'>
+                        <div class='label'> Budget</div>
+                        <input class='value' type='text' value='0'><span class="material-symbols-outlined">payments</span>
+                    </div>
+                    <div class='group-stats'>
+                        <div class='label'>Leads</div>
+                        <input class='value' type='text' value='0'><span class="material-symbols-outlined">groups</span>
+                    </div>
+                </div>
+                <div class='revenue'>
+                    <div class='revenue-bar'>
+                        <input type="text" value="0" class='revenue-value'>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <script src='script.js'>
-
-    </script>
+    <nav>
+        <ul>
+            <li><button><span class="material-symbols-outlined">person</span><br>Player 1</button></li>
+            <li><button><span class="material-symbols-outlined">person</span><br>Player 2</button></li>
+            <li><button><span class="material-symbols-outlined">person</span><br>Player 3</button></li>
+            <li><button><span class="material-symbols-outlined">person</span><br>Player 4</button></li>
+        </ul>
+    </nav>
 </body>
 </html>
 
