@@ -8,22 +8,24 @@ fetch('cards.json')
   })
   .catch(error => console.error("Error while loading cards :", error));
 
+var turn = 1;
+
 class Player {
     constructor(name) {
       this.name = name;
       this.budget = 100000; 
       this.revenue = 0;
-//    this.clients = 0;
-      this.prospects = 0;
-      this.turn = 1;
+      this.leads = 0;
+      this.bi = 0;
 
       this.budgetDisplayer = document.getElementById(`budget-${this.name}`);
       this.revenueDisplayer = document.getElementById(`revenue-${this.name}`);
-      this.prospectsDisplayer = document.getElementById(`prospects-${this.name}`);
-      this.turnDisplayer = document.getElementById(`turn-${this.name}`);
+      this.leadsDisplayer = document.getElementById(`leads-${this.name}`);
     }
   
+
     useCard(card) {
+      console.log("Utilisation de la carte :", card);
       for (const [key, effet] of Object.entries(card.effects)) {
         if (!effet || !effet.operation) continue;
         
@@ -47,28 +49,42 @@ class Player {
     }
 
     nextTurn(){
-      this.turn++;
       this.budget = this.revenue*0.1 + this.budget;
 
-      let prospectsValue = 100;
+      let leadsValue = 100;
+      let leadsConsume = 350;
 
-      if(this.prospects > 1000){
-        this.revenue += 1000*prospectsValue;
-        this.prospects -= 1000;
+      if(this.leads > leadsConsume){
+        this.revenue += leadsConsume*leadsValue;
+        this.leads -= leadsConsume;
       }
       else{
-        this.revenue += prospectsValue*this.prospects;
-        this.prospects = 0;
+        this.revenue += leadsValue*this.leads;
+        this.leads = 0;
       }
 
       this.printInfosPlayer();
     }
 
     printInfosPlayer(){
-      this.budgetDisplayer.innerHTML = this.budget;
-      this.revenueDisplayer.innerHTML = this.revenue;
-      this.prospectsDisplayer.innerHTML = this.prospects;
-      this.turnDisplayer.innerHTML = this.turn;
+      if(this.budget < 0){
+        this.budget = 0;
+      }
+      else if (this.revenue < 0){
+        this.revenue = 0;
+      }
+
+      this.budgetDisplayer.value = this.budget;
+      this.revenueDisplayer.value = this.revenue;
+      this.leadsDisplayer.value = this.leads;
+
+      if(this.bi == 0){
+
+      }
+    }
+
+    eventListener(){
+
     }
   } /* End of Player's Class */
 
@@ -87,7 +103,8 @@ Player4.printInfosPlayer();
 
 function globalUseCard(Player) {
 
-  const cardId = parseInt(document.getElementById("cardId").value, 10);
+  const cardInput = document.getElementById(`cardId-${Player.name}`);
+  const cardId = parseInt(cardInput.value, 10);
 
   const myCard = cards.find(card => card.id === cardId);
 
@@ -98,9 +115,14 @@ function globalUseCard(Player) {
 
   Player.useCard(myCard);
   Player.printInfosPlayer();
+
+  cardInput.value = "";
 }
 
 function changeTurn(){
+  turn++;
+  document.getElementById('turn-1').innerHTML = turn;
+
   Player1.nextTurn();
   Player2.nextTurn();
   Player3.nextTurn();

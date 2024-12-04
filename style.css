@@ -1,10 +1,37 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Comfortaa";
+}
+body{
+    background-color: #fff8f3;
+}
+:root{
+    --main-color: #aadbea;
+    --second-color: #fdd5a4;
+}
+
+#section-2, #section-3, #section-4{
+    display: none;
 }
 
 .players{
     width: 100%;
+}
+
+.playerName{
+    font-size: 1.6em;
+    width: 85%;
+    margin: 1em;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 100px;
+    border: solid 2px black;
+}
+
+.playerName::placeholder{
+    opacity: 0.8;
+    color: black;
 }
 
 .container{
@@ -17,34 +44,96 @@
     display: flex;
     flex-direction: row;
     width: 80%;
+    margin: 10% 5%;
+    padding: 10px;
 }
 
 .label{
-    width: 40%;
+    width: 65%;
     text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.label::after{
+    content: ":";
 }
 
 .value{
-    width: 60%;
+    width: 35%;
     text-align: right;
+    border: black solid 1px;
+    border-right: none;
+    border-left: none;
+    margin-right : 10px;
 }
 
+.cardId{
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.cardId::placeholder{
+    opacity: 0.5;
+}
+
+.button-usecard{
+    padding: 20px;
+    color: black;
+    border: black 2px solid;
+    border-top : none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.use-card{
+    flex-direction: column;
+}
 .stats{
     width: 70%;
+    margin-top: 15%;
 }
 
 .revenue{
     width: 30%;
-    height: 80vh;
+    margin-top: 5vh;
+}
+
+.next-turn{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 9vh;
+    right: 0px;
+    width: 60vw;
+    box-sizing: border-box;
+    padding: 2em;
+    height: 7vh;
+    background-color: var(--main-color);
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.next-turn > button{
+    padding: 5px;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .revenue-bar{
     position: relative;
     width: 40%;
-    height: 80vh;
+    height: 70vh;
     border-radius: 50px;
     margin: auto;
-    background-color: brown;
+    background-color: var(--main-color);
 }
 
 .revenue-value{
@@ -58,7 +147,6 @@
     width: 200%;
     text-align: right;
 }
-
 
 table{
     border-collapse: collapse;
@@ -74,7 +162,7 @@ nav{
     left: 0;
     width: 100vw;
     height: 7vh;
-    background-color: lightgrey;
+    background-color: var(--main-color);
 }
 
 nav > ul{
@@ -92,6 +180,10 @@ nav > ul > li > button{
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.dollar{
+    margin: auto auto auto 5px;
 }
 
 /* Icon */
