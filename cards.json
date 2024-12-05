@@ -3,7 +3,7 @@
   "type": "Business International",
   "description": "",
   "effects": {
-    "bi": { "value": 0, "operation": "add" }
+    "bi": { "value": 1, "operation": "add" }
   }
 },
 {

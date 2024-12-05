@@ -21,6 +21,9 @@ class Player {
       this.budgetDisplayer = document.getElementById(`budget-${this.name}`);
       this.revenueDisplayer = document.getElementById(`revenue-${this.name}`);
       this.leadsDisplayer = document.getElementById(`leads-${this.name}`);
+      this.biDisplayer = document.getElementById(`globe-${this.name}`);
+
+      this.revenueBar = document.getElementById(`revenue-bar-${this.name}`);
     }
   
 
@@ -29,22 +32,43 @@ class Player {
       for (const [key, effet] of Object.entries(card.effects)) {
         if (!effet || !effet.operation) continue;
         
-        switch (effet.operation) {
-          case "add":
-            this[key] += effet.value;
-            break;
-          case "multiply":
-            this[key] *= effet.value;
-            break;
-          case "subtract":
-            this[key] -= effet.value;
-            break;
-          case "divide":
-            this[key] = Math.floor(this[key] / effet.value);
-            break;
-          default:
-            console.warn(`Opération inconnue : ${effet.operation}`);
+        let validate = 1;
+
+        if(key == "budget"){
+          if(this.budget + effet.value < 0){
+            alert("Budget to low!");
+            validate = 0;
+          }
         }
+
+        let givenValue = effet.value;
+
+        if(this.bi > 0){
+          if(key == "revenue"){
+            givenValue = effet.value * 1.2;
+          }
+        }
+
+        if(validate == 1){ 
+          switch (effet.operation) {
+            case "add":
+              this[key] += givenValue;
+              break;
+            case "multiply":
+              this[key] *= givenValue;
+              break;
+            case "subtract":
+              this[key] -= givenValue;
+              break;
+            case "divide":
+              this[key] = Math.floor(this[key] / givenValue);
+              break;
+            default:
+              console.warn(`Opération inconnue : ${effet.operation}`);
+          }
+        }
+
+          
       }
     }
 
@@ -79,13 +103,50 @@ class Player {
       this.leadsDisplayer.value = this.leads;
 
       if(this.bi == 0){
-
+        this.biDisplayer.style.color = "lightgrey";
+        this.biDisplayer.style.opacity = "0.5";
       }
+      else if(this.bi >= 1){
+        this.biDisplayer.style.color = "red";
+        this.biDisplayer.style.opacity = "0.8";
+      }
+
+      let barHeight = (this.revenue/10000000)*70;
+
+      if(barHeight > 70){
+        barHeight = 70;
+      }
+      else if (barHeight < 0){
+        barHeight = 1;
+      }
+
+
+      this.revenueBar.style.height = `${barHeight}vh`;
+      this.revenueDisplayer.style.bottom = `${barHeight+1}vh`;
     }
 
     eventListener(){
+      this.revenueDisplayer.addEventListener('input', () => {
+        this.revenue = parseInt(this.revenueDisplayer.value, 10);
+        this.printInfosPlayer();
+      })
 
+      this.leadsDisplayer.addEventListener('input', () => {
+        this.leads = parseInt(this.leadsDisplayer.value, 10);
+        this.printInfosPlayer();
+      })
+
+      this.budgetDisplayer.addEventListener('input', () => {
+        this.budget = parseInt(this.budgetDisplayer.value, 10);
+        this.printInfosPlayer();
+      })
     }
+
+    gettingStarted(){
+      this.printInfosPlayer();
+      this.eventListener();
+    }
+
   } /* End of Player's Class */
 
 const Player1 = new Player("1");
@@ -93,10 +154,10 @@ const Player2 = new Player("2");
 const Player3 = new Player("3");
 const Player4 = new Player("4");
 
-Player1.printInfosPlayer();
-Player2.printInfosPlayer();
-Player3.printInfosPlayer();
-Player4.printInfosPlayer();
+Player1.gettingStarted();
+Player2.gettingStarted();
+Player3.gettingStarted();
+Player4.gettingStarted();
 
 
 /* Functions */

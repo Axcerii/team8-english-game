@@ -12,6 +12,9 @@
     <title>Brand and Butter</title>
 </head>
 <body>
+    <section id='next-turn'>
+        
+    </section>
         <?php
                 printPlayer(1);
                 printPlayer(2);
@@ -63,15 +66,15 @@ function printPlayer($number){
                     </div>
                 </div>
                 <div class='revenue'>
-                    <div class='revenue-bar'>
+                    <div class='revenue-bar' id='revenue-bar-$number'>
                         <input type='text' value='0' class='revenue-value' id='revenue-$number'>
                     </div>
                 </div>
                 </div>
             </div>
-            <div class='international-container'>
-                <span class='material-symbols-outlined'> Globe </span>
-                <p> INTERNATIONAL </p>
+            <div class='international-container' id='globe-$number'>
+                <span class='material-symbols-outlined globe'> Globe </span>
+                <p> International </p>
             </div>
     </section>
     ";
