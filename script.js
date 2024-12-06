@@ -152,6 +152,9 @@ class Player {
       if (this.revenue < 0){
         this.revenue = 0;
       }
+      if (this.leads < 0){
+        this.leads = 0;
+      }
 
       this.budgetDisplayer.value = this.budget;
       this.revenueDisplayer.value = this.revenue;
