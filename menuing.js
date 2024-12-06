@@ -14,7 +14,7 @@ function switchPlayer(playerNumber){
 
     const root = document.documentElement;
 
-    switch (playerNumber) {
+/*     switch (playerNumber) {
       case 1:
         root.style.setProperty('--main-color', '#aadbea');
         root.style.setProperty('--second-color', '#fdd5a4');
@@ -35,5 +35,38 @@ function switchPlayer(playerNumber){
         root.style.setProperty('--main-color', '#aadbea');
         root.style.setProperty('--second-color', '#fdd5a4');
         break;
-    }
+    } */
 }
+
+function showPopup(id){
+    const blackscreen = document.getElementById("blackscreen");
+    const popup = document.getElementById(id);
+    popup.style.top = "50%";
+    blackscreen.style.opacity = "0.7";
+    blackscreen.style.zIndex = "100";
+}
+
+function hidePopup(id){
+    const blackscreen = document.getElementById("blackscreen");
+    const popup = document.getElementById(id);
+    popup.style.top = "-105%";
+    blackscreen.style.opacity = "0";
+    blackscreen.style.zIndex = "-100";
+}
+
+
+
+/* Prevent leaving */
+
+let shouldConfirmLeave = false;
+
+document.addEventListener('click', () => {
+    shouldConfirmLeave = true;
+});
+
+window.addEventListener('beforeunload', function (event) {
+    if (shouldConfirmLeave) {
+        event.preventDefault();
+        event.returnValue = '';
+    }
+});

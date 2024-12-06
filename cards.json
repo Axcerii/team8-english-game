@@ -3,7 +3,10 @@
   "type": "Business International",
   "description": "",
   "effects": {
-    "bi": { "value": 1, "operation": "add" }
+    "budget": { "value": -700000, "operation": "add" },
+    "bi": { "value": 1, "operation": "add" },
+    "revenue": { "value": 0, "operation": "add" },
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -11,9 +14,9 @@
   "type": "Artistic Direction",
   "description": "Find a Logo",
   "effects": {
+    "budget": { "value": -15000, "operation": "add" },
     "revenue": { "value": 1.05, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -15000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -21,9 +24,9 @@
   "type": "Artistic Direction",
   "description": "Photo Shooting",
   "effects": {
+    "budget": { "value": -15000, "operation": "add" },
     "revenue": { "value": 1.05, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -15000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -31,9 +34,9 @@
   "type": "Artistic Direction",
   "description": "Adobe suite license",
   "effects": {
+    "budget": { "value": -16000, "operation": "add" },
     "revenue": { "value": 1.08, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -16000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -41,9 +44,9 @@
   "type": "Artistic Direction",
   "description": "Graphic Charter",
   "effects": {
+    "budget": { "value": -50000, "operation": "add" },
     "revenue": { "value": 1.10, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -50000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -51,9 +54,9 @@
   "type": "Artistic Direction",
   "description": "New Typography",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 1.05, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -61,9 +64,9 @@
   "type": "Artistic Direction",
   "description": "3D Animation",
   "effects": {
+    "budget": { "value": -50000, "operation": "add" },
     "revenue": { "value": 1.10, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -50000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -71,9 +74,9 @@
   "type": "Artistic Direction",
   "description": "Creation of Goodies",
   "effects": {
+    "budget": { "value": -100000, "operation": "add" },
     "revenue": { "value": 1.20, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -100000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -81,9 +84,9 @@
   "type": "Artistic Direction",
   "description": "Recruit an Art Director",
   "effects": {
+    "budget": { "value": -45000, "operation": "add" },
     "revenue": { "value": 1.15, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -45000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -91,9 +94,9 @@
   "type": "Artistic Direction",
   "description": "Creating a Podcast",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 1.10, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -101,9 +104,9 @@
   "type": "Artistic Direction",
   "description": "Hire a Motion Designer",
   "effects": {
+    "budget": { "value": -30000, "operation": "add" },
     "revenue": { "value": 1.10, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -30000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -111,9 +114,9 @@
   "type": "Creation of prints",
   "description": "",
   "effects": {
+    "budget": { "value": -30000, "operation": "add" },
     "revenue": { "value": 1.10, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -30000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -121,9 +124,9 @@
   "type": "Artistic Direction",
   "description": "Create a logo",
   "effects": {
+    "budget": { "value": -35000, "operation": "add" },
     "revenue": { "value": 1.10, "operation": "multiply" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -35000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -131,9 +134,9 @@
   "type": "Lead",
   "description": "Instagram :)",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 1000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 1000, "operation": "add" }
   }
 },
 {
@@ -141,9 +144,9 @@
   "type": "Lead",
   "description": "Instagram :(",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": -1000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": -1000, "operation": "add" }
   }
 },
 {
@@ -151,9 +154,9 @@
   "type": "Lead",
   "description": "Facebook :)",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 1000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 1000, "operation": "add" }
   }
 },
 {
@@ -161,9 +164,9 @@
   "type": "Lead",
   "description": "Facebook :(",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": -1000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": -1000, "operation": "add" }
   }
 },
 {
@@ -171,9 +174,9 @@
   "type": "Lead",
   "description": "Youtube :)",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 5000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 5000, "operation": "add" }
   }
 },
 {
@@ -181,9 +184,9 @@
   "type": "Lead",
   "description": "Youtube :(",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": -5000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": -5000, "operation": "add" }
   }
 },
 {
@@ -191,9 +194,9 @@
   "type": "Lead",
   "description": "TikTok :)",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 5000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 5000, "operation": "add" }
   }
 },
 {
@@ -201,9 +204,9 @@
   "type": "Lead",
   "description": "TikTok :(",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": -5000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": -5000, "operation": "add" }
   }
 },
 {
@@ -211,9 +214,9 @@
   "type": "Lead",
   "description": "Twitter :)",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 100, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 100, "operation": "add" }
   }
 },
 {
@@ -221,9 +224,9 @@
   "type": "Lead",
   "description": "Twitter :(",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": -100, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": -100, "operation": "add" }
   }
 },
 {
@@ -231,9 +234,9 @@
   "type": "Customer",
   "description": "+300 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 30000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -241,9 +244,9 @@
   "type": "Customer",
   "description": "-300 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -30000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -251,9 +254,9 @@
   "type": "Customer",
   "description": "+30 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 3000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -261,9 +264,9 @@
   "type": "Customer",
   "description": "-30 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -3000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -271,9 +274,9 @@
   "type": "Customer",
   "description": "+1000 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 100000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -281,9 +284,9 @@
   "type": "Customer",
   "description": "+10000 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 1000000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -291,9 +294,9 @@
   "type": "Customer",
   "description": "+100 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 10000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -301,9 +304,9 @@
   "type": "Customer",
   "description": "+50 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 5000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -311,9 +314,9 @@
   "type": "Customer",
   "description": "+5000 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 500000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -321,9 +324,9 @@
   "type": "Customer",
   "description": "-100 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -10000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -331,9 +334,9 @@
   "type": "Customer",
   "description": "-1000 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -100000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -341,9 +344,9 @@
   "type": "Customer",
   "description": "-10000 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -1000000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -351,9 +354,9 @@
   "type": "Customer",
   "description": "-5000 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -500000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -361,9 +364,9 @@
   "type": "Customer",
   "description": "-50 Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -5000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -371,9 +374,9 @@
   "type": "Chance",
   "description": "Success Bonus",
   "effects": {
+    "budget": { "value": 50000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 50000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -381,9 +384,9 @@
   "type": "Chance",
   "description": "Discrete price increase",
   "effects": {
+    "budget": { "value": 9000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 9000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -391,9 +394,9 @@
   "type": "Chance",
   "description": "Corporate Merger",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 300000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -401,9 +404,9 @@
   "type": "Chance",
   "description": "Betrayal Collaborator",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -1000000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -411,9 +414,9 @@
   "type": "Chance",
   "description": "Customer Complaint",
   "effects": {
+    "budget": { "value": -1000, "operation": "add" },
     "revenue": { "value": -10000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -1000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -421,9 +424,9 @@
   "type": "Chance",
   "description": "Bad Buzz",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": -100000, "operation": "add" },
-    "leads": { "value": -1000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": -1000, "operation": "add" }
   }
 },
 {
@@ -431,9 +434,9 @@
   "type": "Chance",
   "description": "Lower Raw Material Costs",
   "effects": {
+    "budget": { "value": 30000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 30000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -441,9 +444,9 @@
   "type": "Chance",
   "description": "Influencer Ad",
   "effects": {
+    "budget": { "value": 1000, "operation": "add" },
     "revenue": { "value": 100000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 1000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -451,9 +454,9 @@
   "type": "Chance",
   "description": "Increases in raw material costs",
   "effects": {
+    "budget": { "value": -30000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -30000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -461,9 +464,9 @@
   "type": "Chance",
   "description": "Carbon Tax",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -471,9 +474,9 @@
   "type": "Chance",
   "description": "Fire of servers",
   "effects": {
+    "budget": { "value": -3000, "operation": "add" },
     "revenue": { "value": -30000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -3000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -481,9 +484,9 @@
   "type": "Chance",
   "description": "Good Buzz",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 50000, "operation": "add" },
-    "leads": { "value": 500, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 500, "operation": "add" }
   }
 },
 {
@@ -491,9 +494,9 @@
   "type": "Chance",
   "description": "Voted best customer of the year",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 1000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 1000, "operation": "add" }
   }
 },
 {
@@ -501,9 +504,39 @@
   "type": "Chance",
   "description": "Golden Customers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 300000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
+  }
+},
+{
+  "id": 415,
+  "type": "Chance",
+  "description": "Accounting Error",
+  "effects": {
+    "budget": { "value": 0, "operation": "add" },
+    "revenue": { "value": -50000, "operation": "add" },
+    "leads": { "value": -1000, "operation": "add" }
+  }
+},
+{
+  "id": 416,
+  "type": "Chance",
+  "description": "Accounting Error",
+  "effects": {
+    "budget": { "value": 0, "operation": "add" },
+    "revenue": { "value": -30000, "operation": "add" },
+    "leads": { "value": 0, "operation": "add" }
+  }
+},
+{
+  "id": 417,
+  "type": "Chance",
+  "description": "Scandal Greenwashing",
+  "effects": {
+    "budget": { "value": 0, "operation": "add" },
+    "revenue": { "value": -10000, "operation": "add" },
+    "leads": { "value": -1000, "operation": "add" }
   }
 },
 {
@@ -511,9 +544,9 @@
   "type": "Spell",
   "description": "Data Leaking",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": -1000, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": -1000, "operation": "add" }
   }
 },
 {
@@ -521,9 +554,9 @@
   "type": "Spell",
   "description": "Cyber Attack",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "multiply" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "multiply" }
   }
 },
 {
@@ -531,9 +564,9 @@
   "type": "Spell",
   "description": "Pulling the rug out from under you",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -541,9 +574,9 @@
   "type": "Spell",
   "description": "The Double Agent",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -551,9 +584,9 @@
   "type": "Spell",
   "description": "Double Authentification",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -561,9 +594,9 @@
   "type": "Spell",
   "description": "Devil's Whispers",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -571,89 +604,89 @@
   "type": "Spell",
   "description": "STRONG Inspiration",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
   "id": 501,
-  "type": "Ecologie",
+  "type": "Ecology",
   "description": "Optimization of the website",
   "effects": {
+    "budget": { "value": -20000, "operation": "add" },
     "revenue": { "value": 10000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -20000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
   "id": 502,
-  "type": "Ecologie",
+  "type": "Ecology",
   "description": "Carbon Footprint Measurement",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 100, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 100, "operation": "add" }
   }
 },
 {
   "id": 503,
-  "type": "Ecologie",
+  "type": "Ecology",
   "description": "Certified ecoresponsible",
   "effects": {
+    "budget": { "value": -20000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 500, "operation": "add" },
-    "budget": { "value": -20000, "operation": "add" }
+    "leads": { "value": 500, "operation": "add" }
   }
 },
 {
   "id": 504,
-  "type": "Ecologie",
+  "type": "Ecology",
   "description": "Associative Investment",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 100, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 100, "operation": "add" }
   }
 },
 {
   "id": 505,
-  "type": "Ecologie",
+  "type": "Ecology",
   "description": "Sustainable Innovation",
   "effects": {
+    "budget": { "value": -15000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 200, "operation": "add" },
-    "budget": { "value": -15000, "operation": "add" }
+    "leads": { "value": 200, "operation": "add" }
   }
 },
 {
   "id": 506,
-  "type": "Ecologie",
+  "type": "Ecology",
   "description": "Invested in durable equipements",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 200, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 200, "operation": "add" }
   }
 },
 {
   "id": 507,
-  "type": "Ecologie",
+  "type": "Ecology",
   "description": "AB Label",
   "effects": {
+    "budget": { "value": -20000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 1000, "operation": "add" },
-    "budget": { "value": -20000, "operation": "add" }
+    "leads": { "value": 1000, "operation": "add" }
   }
 },
 {
   "id": 508,
-  "type": "Ecologie",
+  "type": "Ecology",
   "description": "Partnership with a Green Company",
   "effects": {
+    "budget": { "value": -50000, "operation": "add" },
     "revenue": { "value": 2000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -50000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -661,9 +694,9 @@
   "type": "Marketting",
   "description": "Investor",
   "effects": {
+    "budget": { "value": -30000, "operation": "add" },
     "revenue": { "value": 100000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -30000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -671,9 +704,9 @@
   "type": "Marketting",
   "description": "Communication Campaign",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 25000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -681,9 +714,9 @@
   "type": "Marketting",
   "description": "Summer Sales",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 15000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -691,9 +724,9 @@
   "type": "Marketting",
   "description": "Participation in a seminar",
   "effects": {
+    "budget": { "value": -15000, "operation": "add" },
     "revenue": { "value": 30000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -15000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -701,9 +734,9 @@
   "type": "Marketting",
   "description": "Winter Sales",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 15000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -711,9 +744,9 @@
   "type": "Marketting",
   "description": "Commercial Alliance",
   "effects": {
+    "budget": { "value": -50000, "operation": "add" },
     "revenue": { "value": 50000, "operation": "add" },
-    "leads": { "value": 500, "operation": "add" },
-    "budget": { "value": -50000, "operation": "add" }
+    "leads": { "value": 500, "operation": "add" }
   }
 },
 {
@@ -721,9 +754,9 @@
   "type": "Marketting",
   "description": "SEO",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 30000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -731,9 +764,9 @@
   "type": "Marketting",
   "description": "Social ADS",
   "effects": {
+    "budget": { "value": -30000, "operation": "add" },
     "revenue": { "value": 100000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -30000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -741,9 +774,9 @@
   "type": "Marketting",
   "description": "Affiliate",
   "effects": {
+    "budget": { "value": -20000, "operation": "add" },
     "revenue": { "value": 50000, "operation": "add" },
-    "leads": { "value": 300, "operation": "add" },
-    "budget": { "value": -20000, "operation": "add" }
+    "leads": { "value": 300, "operation": "add" }
   }
 },
 {
@@ -751,9 +784,9 @@
   "type": "Marketting",
   "description": "E-Mailing campaign",
   "effects": {
+    "budget": { "value": -50000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 1000, "operation": "add" },
-    "budget": { "value": -50000, "operation": "add" }
+    "leads": { "value": 1000, "operation": "add" }
   }
 },
 {
@@ -761,19 +794,19 @@
   "type": "Marketting",
   "description": "Influencer",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 50000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
   "id": 612,
   "type": "Marketting",
-  "description": "TV Ad",
+  "description": "Ad",
   "effects": {
+    "budget": { "value": -500000, "operation": "add" },
     "revenue": { "value": 300000, "operation": "add" },
-    "leads": { "value": 100, "operation": "add" },
-    "budget": { "value": -500000, "operation": "add" }
+    "leads": { "value": 100, "operation": "add" }
   }
 },
 {
@@ -781,9 +814,9 @@
   "type": "Marketting",
   "description": "Black Friday",
   "effects": {
+    "budget": { "value": 0, "operation": "add" },
     "revenue": { "value": 30000, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": 0, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -791,9 +824,9 @@
   "type": "Marketting",
   "description": "SEA",
   "effects": {
+    "budget": { "value": -50000, "operation": "add" },
     "revenue": { "value": 100000, "operation": "add" },
-    "leads": { "value": 100, "operation": "add" },
-    "budget": { "value": -50000, "operation": "add" }
+    "leads": { "value": 100, "operation": "add" }
   }
 },
 {
@@ -801,9 +834,9 @@
   "type": "Marketting",
   "description": "Community Manager",
   "effects": {
+    "budget": { "value": -10000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 300, "operation": "add" },
-    "budget": { "value": -10000, "operation": "add" }
+    "leads": { "value": 300, "operation": "add" }
   }
 },
 {
@@ -811,9 +844,9 @@
   "type": "Marketting",
   "description": "Social Media",
   "effects": {
+    "budget": { "value": -50000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -50000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 },
 {
@@ -821,9 +854,9 @@
   "type": "Marketting",
   "description": "Website",
   "effects": {
+    "budget": { "value": -50000, "operation": "add" },
     "revenue": { "value": 0, "operation": "add" },
-    "leads": { "value": 0, "operation": "add" },
-    "budget": { "value": -50000, "operation": "add" }
+    "leads": { "value": 0, "operation": "add" }
   }
 }
 ]
